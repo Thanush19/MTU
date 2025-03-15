@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import StudentsReviews from "./StudentsReviews";
 import Dashboard from "./Dashboard";
+import StudentCollegeForm from "./StudentCollegeForm";
+import CollegeDetails from "./CollegeDetails";
 
 function App() {
   return (
@@ -11,13 +13,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/students-reviews" element={<StudentsReviews />} />
         <Route path="/dashboard" element={<Dashboard />} />
-
-        {/*
         <Route
           path="/students-looking-colleges"
-          element={<StudentsLookingColleges />}
+          element={<StudentCollegeForm />}
         />
-        <Route path="/colleges-insights" element={<CollegesInsights />} /> */}
+        <Route path="/college-details" element={<CollegeDetails />} />
+        {/* Future routes */}
+        {/* <Route path="/colleges-insights" element={<CollegesInsights />} /> */}
       </Routes>
     </Router>
   );
