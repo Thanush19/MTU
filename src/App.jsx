@@ -5,6 +5,10 @@ import StudentsReviews from "./StudentsReviews";
 import Dashboard from "./Dashboard";
 import StudentCollegeForm from "./StudentCollegeForm";
 import CollegeDetails from "./CollegeDetails";
+import CollegeInsights from "./CollegeInsights";
+import CompetitorAnalysis from "./CompetitorAnalysis";
+import StudentsInsights from "./StudentsInsights";
+import StudentsPreferences from "./StudentPreferences";
 
 function App() {
   return (
@@ -18,8 +22,10 @@ function App() {
           element={<StudentCollegeForm />}
         />
         <Route path="/college-details" element={<CollegeDetails />} />
-        {/* Future routes */}
-        {/* <Route path="/colleges-insights" element={<CollegesInsights />} /> */}
+        <Route path="/colleges-insights" element={<CollegeInsights />} />
+        <Route path="/competitor-analysis" element={<CompetitorAnalysis />} />
+        <Route path="/students-insights" element={<StudentsInsights />} />
+        <Route path="/students-preferences" element={<StudentsPreferences />} />
       </Routes>
     </Router>
   );
